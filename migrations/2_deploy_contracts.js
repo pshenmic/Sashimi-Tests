@@ -40,7 +40,7 @@ module.exports = function (deployer, network, accounts) {
 
             let UniswapV2FactoryInstance, WETH9Instance;
             let SASHIMI_ETH, MOCKERC20_ETH, TOGETHER;
-            if (network == 'kovan') {
+            if (network === 'kovan') {
 
                 // CONNECT TO UNISWAP FACTORY AND ROUTER CONTRACTS
                 UniswapV2FactoryInstance = await UniswapV2Factory.at('0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f'); // UNISWAP V2 FACTORY ADDRESS
